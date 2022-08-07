@@ -1,0 +1,15 @@
+.ui.items>.item>.image+.content {
+    padding-top: 1em;
+  }
+  
+  .ui.items>.item>.content>.header:not(.ui) {
+    font-size: 2em;
+  }
+  
+  .ui.grid [class*="left floated"].column {
+    margin-right: 1em;
+  }
+  
+  .ui.grid [class*="right floated"].column {
+    margin-left: 1em;
+  }
