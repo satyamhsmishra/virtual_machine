@@ -20,14 +20,11 @@ function Main() {
 
   function handleFormSubmit(type, price) {
     setCostEstimate(existingItem => {
-    console.log(existingItem,'existingItem')
       const data = existingItem.filter((item) => {
-        console.log(item,'item')
         if(item.type === type)
           item.price = price
         return item.type === type
       })
-      console.log(data, 'data')
       const options = data.length > 0 ? [ ...data ] : [ { type, price } ]
       return [...existingItem, ...options]
     })
@@ -38,7 +35,6 @@ function Main() {
   },[tab])
 
   useEffect(() => {
-    console.log(types,'types--------------------')
   },[types])
 
   function renderElement(tab) {
